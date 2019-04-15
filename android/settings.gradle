@@ -1,0 +1,5 @@
+rootProject.name = 'HealthApiPlayground'
+include ':sdk-template-health-api'
+project(':sdk-template-health-api').projectDir = new File(rootProject.projectDir, '../node_modules/sdk-template-health-api/android')
+
+include ':app'
