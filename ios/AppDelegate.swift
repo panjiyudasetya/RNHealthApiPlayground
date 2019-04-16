@@ -9,12 +9,22 @@
 import Foundation
 import UIKit
 
+enum JSBundle {
+  case prebuild
+  case localServer
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, RCTBridgeDelegate {
   var window: UIWindow?
   
+  #if targetEnvironment(simulator)
+  let jsBundleType: JSBundle = .localServer
+  #else
+  let jsBundleType: JSBundle = .prebuild
+  #endif
   
-  private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
     // Override point for customization after application launch.
     
     let bridge = RCTBridge(delegate: self, launchOptions: launchOptions)
@@ -33,10 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCTBridgeDelegate {
   }
   
   func sourceURL(for bridge: RCTBridge!) -> URL! {
-    #if DEBUG
-    return RCTBundleURLProvider.init().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
-    #else
-    return Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
-    #endif
+    switch(jsBundleType){
+    case .prebuild:
+      return Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
+    case .localServer:
+      return RCTBundleURLProvider.init().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
+    }
   }
 }
