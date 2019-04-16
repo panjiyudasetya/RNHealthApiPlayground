@@ -5381,7 +5381,7 @@ scheduler@^0.13.3:
 
 "sdk-template-health-api@https://github.com/panjiyudasetya/RNHealthApi.git#develop":
   version "1.0.0"
-  resolved "https://github.com/panjiyudasetya/RNHealthApi.git#66598443a02f27849a0390ad79dd5ffcc0666e73"
+  resolved "https://github.com/panjiyudasetya/RNHealthApi.git#45e09c8f91af741d50ff8894185c87990e92d101"
   dependencies:
     typescript "^3.4.3"
 
