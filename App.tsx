@@ -9,9 +9,18 @@
  */
 
 import React, {Component} from 'react';
-import {Dimensions, ScrollView, StyleSheet, Text, TouchableOpacity, View, Alert} from 'react-native';
+import {
+  Alert,
+  Dimensions,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
 
-import HealthApi from 'sdk-template-health-api';
+import HealthApi from '@me/sdk-template-health-api';
 
 interface Props {}
 interface PropsState {
@@ -94,6 +103,7 @@ export default class App extends Component<Props, PropsState> {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'stretch',
+    paddingTop: Platform.OS === 'ios' ? 24 : 0
   },
   button: {
     alignItems: 'center',
