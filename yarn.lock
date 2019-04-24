@@ -801,7 +801,7 @@
 
 "@me/sdk-template-health-api@git+ssh://git@github.com:panjiyudasetya/RNHealthApi.git#develop":
   version "0.0.1"
-  resolved "git+ssh://git@github.com:panjiyudasetya/RNHealthApi.git#3690f1dc0089df130cb145424792a28034c1d69a"
+  resolved "git+ssh://git@github.com:panjiyudasetya/RNHealthApi.git#acb683ebb744f78848d1d147d9cecd1bfd4120c8"
   dependencies:
     typescript "^3.4.3"
 

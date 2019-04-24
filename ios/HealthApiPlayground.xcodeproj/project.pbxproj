@@ -32,11 +32,12 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* HealthApiPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HealthApiPlaygroundTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		480B42362265E7B900061538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480B42352265E7B900061538 /* AppDelegate.swift */; };
+		480B42362265E7B900061538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 480B42352265E7B900061538 /* AppDelegate.m */; };
+		4817D88C2270098E006B0189 /* libRNHealthApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4828852022686BCC0011315A /* libRNHealthApi.a */; };
 		4818CB2A226471C5003EB387 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4818CB29226471C5003EB387 /* HealthKit.framework */; };
+		48FFA277226F617F00CC1974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FFA276226F617F00CC1974 /* main.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		DA2E7881050A42DEA8979D14 /* libRNHealthApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFF9EB5A32545D99ED2CA53 /* libRNHealthApi.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -344,10 +345,11 @@
 		2D02E47B1E0B4A5D006451C7 /* HealthApiPlayground-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthApiPlayground-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* HealthApiPlayground-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HealthApiPlayground-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		480B42262265D5A400061538 /* HealthApiPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthApiPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
-		480B42352265E7B900061538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		480B42352265E7B900061538 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4818CB29226471C5003EB387 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4818CB2B226471C5003EB387 /* HealthApiPlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = HealthApiPlayground.entitlements; path = HealthApiPlayground/HealthApiPlayground.entitlements; sourceTree = "<group>"; };
+		48FFA275226F611E00CC1974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		48FFA276226F617F00CC1974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -385,7 +387,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				DA2E7881050A42DEA8979D14 /* libRNHealthApi.a in Frameworks */,
+				4817D88C2270098E006B0189 /* libRNHealthApi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,13 +500,14 @@
 		13B07FAE1A68108700A75B9A /* HealthApiPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				4818CB2B226471C5003EB387 /* HealthApiPlayground.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
-				480B42352265E7B900061538 /* AppDelegate.swift */,
-				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				48FFA275226F611E00CC1974 /* AppDelegate.h */,
+				480B42352265E7B900061538 /* AppDelegate.m */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
-				480B42262265D5A400061538 /* HealthApiPlayground-Bridging-Header.h */,
+				48FFA276226F617F00CC1974 /* main.m */,
 			);
 			name = HealthApiPlayground;
 			sourceTree = "<group>";
@@ -1171,7 +1174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				480B42362265E7B900061538 /* AppDelegate.swift in Sources */,
+				480B42362265E7B900061538 /* AppDelegate.m in Sources */,
+				48FFA277226F617F00CC1974 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1221,7 +1225,6 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1251,7 +1254,6 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = (
