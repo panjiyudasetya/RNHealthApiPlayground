@@ -1,10 +1,10 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
+//
+//  main.m
+//  HealthApiPlayground
+//
+//  Created by Panji Y. Wiwaha on 23/04/19.
+//  Copyright © 2019 Facebook. All rights reserved.
+//
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"

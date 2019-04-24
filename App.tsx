@@ -9,10 +9,18 @@
  */
 
 import React, {Component} from 'react';
-import {Dimensions, ScrollView, StyleSheet, Text, TouchableOpacity, View, Alert} from 'react-native';
+import {
+  Alert,
+  Dimensions,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
 
-import HealthApi from 'sdk-template-health-api';
-import { string } from 'prop-types';
+import HealthApi from '@me/sdk-template-health-api';
 
 interface Props {}
 interface PropsState {
@@ -95,19 +103,20 @@ export default class App extends Component<Props, PropsState> {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'stretch',
+    paddingTop: Platform.OS === 'ios' ? 24 : 0
   },
   button: {
     alignItems: 'center',
     backgroundColor: '#1e90ff',
     borderRadius: 4,
-    height: '52',
+    height: 48,
     shadowColor: '#DDDDDD',
     shadowRadius: 2,
     paddingHorizontal: 4,
     width: Dimensions.get('window').width / 2,
   },
   buttonText: {
-      height: '100%',
+      height: 48,
       color: '#FFFFFF',
       fontWeight: 'bold',
       textAlign: 'center',
@@ -121,12 +130,12 @@ const styles = StyleSheet.create({
   },
   columnItem: {
       alignContent: 'center',
-      height: 46,
+      height: 56,
       padding: 4,
       width: Dimensions.get('window').width / 2,
   },
   columnText: {
-      height: '100%',
+      height: 56,
       textAlignVertical: 'center',
       alignSelf: 'center',
   },

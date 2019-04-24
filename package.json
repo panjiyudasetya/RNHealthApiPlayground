@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.4",
-    "sdk-template-health-api": "https://github.com/panjiyudasetya/RNHealthApi.git#develop"
+    "@me/sdk-template-health-api": "git+ssh://git@github.com:panjiyudasetya/RNHealthApi.git#develop"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
