@@ -799,9 +799,9 @@
     "@types/istanbul-lib-coverage" "^2.0.0"
     "@types/yargs" "^12.0.9"
 
-"@me/sdk-template-health-api@git+ssh://git@github.com:panjiyudasetya/RNHealthApi.git#develop":
+"@me/sdk-template-health-api@git+ssh://git@github.com:panjiyudasetya/RNHealthApi.git#0.0.2-rc":
   version "0.0.1"
-  resolved "git+ssh://git@github.com:panjiyudasetya/RNHealthApi.git#acb683ebb744f78848d1d147d9cecd1bfd4120c8"
+  resolved "git+ssh://git@github.com:panjiyudasetya/RNHealthApi.git#3dda6e8a960991a863a8e94cce6f5760a6f59ddc"
   dependencies:
     typescript "^3.4.3"
 
